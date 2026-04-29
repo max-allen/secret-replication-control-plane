@@ -21,7 +21,20 @@ The project is currently in the **architecture and design phase**. Initial imple
 - [x] Problem statement and design exploration
 - [x] System context diagram
 - [x] Data model design
-- [ ] Architecture document
+- [x] Architecture document
 - [ ] API implementation
 - [ ] Event publishing pipeline
 - [ ] Regional worker prototype
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/max-allen/multi-region-control-plane.git
+cd multi-region-control-plane
+
+# Build and start the API and Postgres database
+docker compose up --build
+```
+
+**NOTE:** The API will be available at `http://localhost:8000` once the database is healthy and the container starts.
